@@ -1,0 +1,2 @@
+# Python_class
+ADDING NOTES OF PYTHON CLASS HERE
