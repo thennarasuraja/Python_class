@@ -1,0 +1,24 @@
+cd .\Python_class\
+git status
+git add .
+git status
+git add .
+git status
+git add .
+git status
+git add .
+git commit -m "changes in one and two.py files"
+git push origin/day2
+git push origin
+git push --set-upstream origin day2
+git add .
+git status
+git push origin
+git commit -m "scond commit"
+git push origin
+git status
+git status
+git pull origin
+doskey history
+doskey/history
+Get-History | Format-List -Property *
