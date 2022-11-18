@@ -14,7 +14,7 @@ person1 = {
     "age": 36,
     "country": "Norway"
 }
-# i=this_is_one("subanandhini", 24)
-# print(i.first())
+i=this_is_one("subanandhini", 24)
+print(i.first())
 # j=this_is_one("dhivyakaran", 20)
 # print(j.first())
