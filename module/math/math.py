@@ -1,4 +1,6 @@
 import math
+# https://docs.python.org/3/library/math.html#constants
+# https://www.w3schools.com/python/python_math.asp
 x = min(5.8, 10, 25)
 y = max(5, 10, 25)
 
