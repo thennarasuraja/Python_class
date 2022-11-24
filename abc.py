@@ -19,8 +19,8 @@ def insert(temp,data):
          que.append(temp.left)
          if (not temp.right):
             if data is not None:
-               temp.right = TreeNode(data)
-            else:
+               temp.right = TreeNode(data)##
+            else:    
                temp.right = TreeNode(0)
             break
          else:
