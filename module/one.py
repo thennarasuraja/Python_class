@@ -20,6 +20,7 @@ person1 = {
     "age": 36,
     "country": "Norway"
 }
+print("one", __name__)
 nandhini=this_is_one("subanandhini", 24, "female")
 print(nandhini.first())
 print(nandhini.second())
