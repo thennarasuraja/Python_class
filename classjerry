@@ -1,0 +1,24 @@
+class jerry:
+    def __init__(self,a,b):
+        self.first=a
+        self.second=b
+
+    def addiction(self):
+        return(self.first+self.second)
+
+    def substraction(self):
+        return(self.first-self.second)
+
+    def multipe(self):
+        return(self.first*self.second)
+
+    def divison(self):
+        return(self.first/self.second)    
+
+if __name__=="__main__":
+    a=jerry(6,8)
+    print(a.addiction()) 
+    print(a.substraction())
+    print(a.multipe()) 
+    print(a.divison())
+                     
