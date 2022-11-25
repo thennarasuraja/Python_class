@@ -35,6 +35,7 @@ y = max(5, 10, 25)
 
 # print((math.fsum([.1, .1, .1, .1, .1, .1, .1, .1, .1, .1])))
 # print(math.gcd(2, 4))
+<<<<<<< HEAD
 # print (math.isnan (56))
 # print (math.isnan (-45.34))
 # print (math.isnan (+45.34))
@@ -60,3 +61,14 @@ print(math.remainder(12.4, 5))   #12.4/5 =  15-2.6=12.4,    10+2.4=12.4
 # 10  12.5  15
 # print(math.nextafter(2.09,30.0))
 
+=======
+print (math.isnan (56))
+print (math.isnan (-45.34))
+print (math.isnan (+45.34))
+print (math.isnan (math.inf))
+print (math.isnan (float("nan")))
+print (math.isnan (float("inf")))
+print (math.isnan (float("-inf")))
+print (math.isnan (math.nan))
+#sdfggrgrtg
+>>>>>>> a7bc631687a62c27ae49b65f1ca142f2f9d232c2
