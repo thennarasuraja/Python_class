@@ -1,9 +1,14 @@
-import math
+# import math
 # https://docs.python.org/3/library/math.html#constants
 # https://www.w3schools.com/python/python_math.asp
-x = min(5.8, 10, 25)
-y = max(5, 10, 25)
-
+# x = min(5.8, 10, 25)0
+def make_pi():
+    li = []
+    for i in str("3.146"[0:4]):
+        if(i!="."):
+            li+=[i]
+    return(li)
+print(make_pi())
 # print(x)
 # print(y)
 # z=abs(-127.25)
@@ -53,10 +58,10 @@ y = max(5, 10, 25)
 # print(math.lcm(10,2,5,6))   #30
 # print(math.lcm(10,2,5,16,18))  #720
 # print(math.gcd(10,2,16,18))  #2
-print(math.remainder(12.6, 5))   #12.6/5 =  15-2.4=12.6,    10+2.6=12.6
-print(math.remainder(12.5, 5))   #12.5/5 =  15-2.5=12.5,    10+2.5=12.5S
-print(math.remainder(12.4, 5))   #12.4/5 =  15-2.6=12.4,    10+2.4=12.4
-# 10 15 20
+# print(math.remainder(12.6, 5))   #12.6/5 =  15-2.4=12.6,    10+2.6=12.6
+# print(math.remainder(12.5, 5))   #12.5/5 =  15-2.5=12.5,    10+2.5=12.5S
+# print(math.remainder(12.4, 5))   #12.4/5 =  15-2.6=12.4,    10+2.4=12.4
+# # 10 15 20
 # 10  12.5  15
 # print(math.nextafter(2.09,30.0))
 
