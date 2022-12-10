@@ -1,39 +1,39 @@
-#Mine
-def isValid(s):
-    is_valid = False
-    single_val = s.split(".")
+# Mine
+# def isValid(s):
+#     is_valid = False
+#     single_val = s.split(".")
 
-    if (len(single_val) == 4):
+#     if (len(single_val) == 4):
 
-        for i in single_val:
+#         for i in single_val:  #00.0.1.90
 
-            if str(i).isdigit() and int(i) >= 0 and int(i) <= 255:
+#             if str(i).isdigit() and int(i) >= 0 and int(i) <= 255:
 
-                if str(i)[0] == "0":  # 00
-                    print(str(i))
-                    if len(str(i)) == 1:
-                        is_valid = True
-                    else:
-                        return False
-                else:
-                    if (len(str(i)) >= 1 and len(str(i)) <= 3):
-                        is_valid = True
-                    else:
-                        return False
+#                 if str(i)[0] == "0":  # 00
+#                     print(str(i))
+#                     if len(str(i)) == 1:
+#                         is_valid = True
+#                     else:
+#                         return False
+#                 else:
+#                     if (len(str(i)) >= 1 and len(str(i)) <= 3):
+#                         is_valid = True
+#                     else:
+#                         return False
 
-            else:
-                return False
-    else:
-        return False
-    return is_valid
+#             else:
+#                 return False
+#     else:
+#         return False
+#     return is_valid
 
 
-if __name__ == '__main__':
-    s = "0...1"
-    if isValid(s):
-        print(1)
-    else:
-        print(0)
+# if __name__ == '__main__':
+#     s = "0...1"
+#     if isValid(s):
+#         print(1)
+#     else:
+#         print(0)
 
 """
 Write a program to Validate an IPv4 Address.
@@ -82,28 +82,41 @@ The task is to complete the function specified, and not to write the full code.
 
 
 def isValid(s):
-    counter=0
-    for i in range(0,len(s)):
-        if(s[i]=='.'):
-            counter=counter+1
-    if(counter!=3):
+    counter = 0
+    for i in range(0, len(s)):  # 20.0.9.10
+        if (s[i] == '.'):
+            counter = counter+1
+    if (counter != 3):
         return 0
-    st=set()
-    for i in range(0,256):
-        st.add(str(i))
-    counter=0
-    temp=""
-    for i in range(0,len(s)):
-        if(s[i]!='.'):
-            temp=temp+s[i]
+    st = set()
+    for i in range(0, 256):  # 0-255
+        st.add(str(i))  # "0","1" .. "255"
+    counter = 0
+    temp = ""
+    for i in range(0, len(s)):
+        if (s[i] != '.'):  # "2.09.8.1."
+
+            temp = temp+s[i]
+
         else:
-            if(temp in st):
-                counter=counter+1
-            temp=""
-    if(temp in st):
-        counter=counter+1
-    if(counter==4):
+            print(temp)
+            print(st)
+            if (temp in st):
+                counter = counter+1  # 3
+            temp = ""
+
+    if (temp in st):
+        print("temp",temp, counter)
+        counter = counter+1
+    if (counter == 4):
         return 1
     else:
         return 0
-    
+
+
+if __name__ == '__main__':
+    s = "00.1.2.3"
+    if isValid(s):
+        print(1)
+    else:
+        print(0)
